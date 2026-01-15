@@ -31,11 +31,11 @@ affect traffic optimization performance.
 - Used to study reward design and constraint effects
 
 ### Multi-Intersection (2×2 Grid)
-
+```bash
 0 ── 1
 |    |
 2 ── 3
-
+```
 - Four intersections, each controlled by a shared PPO policy
 - Vehicles move between intersections
 - Global reward encourages coordination
@@ -44,7 +44,7 @@ affect traffic optimization performance.
 ---
 
 ## 📂 Project Structure
-
+```bash
 envs/
 ├── single_intersection_env.py
 ├── multi_intersection_env.py
@@ -52,7 +52,7 @@ train_single.py
 train_multi.py
 test_single.py
 test_multi.py
-
+```
 
 ---
 
@@ -92,13 +92,15 @@ Encourages:
 ---
 
 ## 🚀 Training
-
-### Single Intersection
 ```bash
+Single Intersection:
 python train_single.py
-Multi-Intersection
+
+Multi-Intersection:
 python train_multi.py
+
 👀 Evaluation
 python test_single.py
 python test_multi.py
+```
 These scripts run trained policies in deterministic mode and print per-intersection traffic states.
